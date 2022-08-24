@@ -1,0 +1,35 @@
+<div class="tareas">  
+  <h1 class="titles"> To Do List :)</h1>
+  <div class="fondo">
+    <app-navbar></app-navbar>
+    <app-tareas></app-tareas>
+  </div>
+</div>
+
+<div class="piano">
+  <h1 class="titles">Piano App :)</h1>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="list-group">
+        <a (click) = "aplicarSonido(1)" class="list-group-item list-group-item-action" style="background-color: red;"></a>
+        <a (click) = "aplicarSonido(2)" class="list-group-item list-group-item-action" style="background-color: orange;"></a>
+        <a (click) = "aplicarSonido(3)" class="list-group-item list-group-item-action" style="background-color: yellow;"></a>
+        <a (click) = "aplicarSonido(4)" class="list-group-item list-group-item-action" style="background-color: green;"></a>
+        <a (click) = "aplicarSonido(5)" class="list-group-item list-group-item-action" style="background-color: teal;"></a>
+        <a (click) = "aplicarSonido(6)" class="list-group-item list-group-item-action" style="background-color: blue;"></a>
+        <a (click) = "aplicarSonido(7)" class="list-group-item list-group-item-action" style="background-color: violet;"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dados">
+  <h1 class="titles">Dados App :)</h1>
+  <div class="jumbotron text-center">
+    <button class="btn btn-success btn-lg" (click)="tirarDados()">Tirar Dados</button>
+    <br>
+    <img class="img" [src]= "dadoIzquierda">
+    <img class="img" [src]= "dadoDerecha">
+    <h1 *ngIf="numero1 === numero2"><span class="win">You WIN!</span></h1>
+  </div>
+</div>

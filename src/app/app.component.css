@@ -1,0 +1,52 @@
+.titles {
+    display: flex;
+    justify-content: center;
+    font-family: 'Silkscreen', cursive;
+    margin-top: 50px;
+}
+
+.list-group-item {
+    cursor: pointer;
+    height: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: 30px;
+}
+
+.list-group-item:active {
+ opacity: 0.65;
+}
+
+/*Dados*/
+.jumbotron{
+    background-color: #e9ecef;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .jumbotron{
+        height: 100%;
+    }
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    background-color: black;
+    border-radius: 10px;
+}
+.win{
+    background-color: green;
+    color: white;
+    padding: 0px 5px;
+}
